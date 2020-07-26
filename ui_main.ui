@@ -223,7 +223,7 @@ border: 0px solid;</string>
               <number>0</number>
              </property>
              <item>
-              <widget class="QPushButton" name="Btn_Menu_3">
+              <widget class="QPushButton" name="btn_page_1">
                <property name="minimumSize">
                 <size>
                  <width>0</width>
@@ -241,12 +241,12 @@ QPushButton:hover {
 }</string>
                </property>
                <property name="text">
-                <string>Menu 1</string>
+                <string>Page 1</string>
                </property>
               </widget>
              </item>
              <item>
-              <widget class="QPushButton" name="Btn_Menu_2">
+              <widget class="QPushButton" name="btn_page_2">
                <property name="minimumSize">
                 <size>
                  <width>0</width>
@@ -264,12 +264,12 @@ QPushButton:hover {
 }</string>
                </property>
                <property name="text">
-                <string>Menu 1</string>
+                <string>Page 2</string>
                </property>
               </widget>
              </item>
              <item>
-              <widget class="QPushButton" name="Btn_Menu_1">
+              <widget class="QPushButton" name="btn_page_3">
                <property name="minimumSize">
                 <size>
                  <width>0</width>
@@ -287,7 +287,7 @@ QPushButton:hover {
 }</string>
                </property>
                <property name="text">
-                <string>Menu 1</string>
+                <string>Page 3</string>
                </property>
               </widget>
              </item>
@@ -307,9 +307,76 @@ QPushButton:hover {
          </property>
          <layout class="QVBoxLayout" name="verticalLayout_5">
           <item>
-           <widget class="QStackedWidget" name="Pages_Widget">
-            <widget class="QWidget" name="page"/>
-            <widget class="QWidget" name="page_2"/>
+           <widget class="QStackedWidget" name="stackedWidget">
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="page_1">
+             <layout class="QVBoxLayout" name="verticalLayout_7">
+              <item>
+               <widget class="QLabel" name="label_1">
+                <property name="font">
+                 <font>
+                  <pointsize>40</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color: #FFF;</string>
+                </property>
+                <property name="text">
+                 <string>PAGE 1</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="page_2">
+             <layout class="QVBoxLayout" name="verticalLayout_6">
+              <item>
+               <widget class="QLabel" name="label_2">
+                <property name="font">
+                 <font>
+                  <pointsize>40</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color: #FFF;</string>
+                </property>
+                <property name="text">
+                 <string>PAGE 2</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="page_3">
+             <layout class="QVBoxLayout" name="verticalLayout_8">
+              <item>
+               <widget class="QLabel" name="label">
+                <property name="font">
+                 <font>
+                  <pointsize>40</pointsize>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color: #FFF;</string>
+                </property>
+                <property name="text">
+                 <string>PAGE 3</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
            </widget>
           </item>
          </layout>
